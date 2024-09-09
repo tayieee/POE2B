@@ -1,0 +1,65 @@
+﻿<Window x:Class="ContractMonthlyClaimSystem.programCoordinator"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ContractMonthlyClaimSystem"
+        mc:Ignorable="d"
+        Title="programCoordinator" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="10">
+            <!-- Header Text -->
+            <TextBlock Text="Program Coordinator"
+                       FontSize="24"
+                       FontWeight="Bold"
+                       Foreground="#FFC0CB"
+                       Margin="0,0,0,20"/>
+
+            <!-- Hours Worked -->
+            <TextBlock Text="ClaimID:"
+                       FontSize="16"
+                       Foreground="#4682B4"/>
+            <TextBox x:Name="HoursWorkedTextBox"
+                     Width="200"
+                     Margin="0,0,0,10"
+                     Padding="5"
+                     Background="#FFFFFF"
+                     BorderBrush="#4682B4"
+                     BorderThickness="1"/>
+
+            <!-- Hourly Rate -->
+            <TextBlock Text="Lecturer:"
+                       FontSize="16"
+                       Foreground="#4682B4"/>
+            <TextBox x:Name="HourlyRateTextBox"
+                     Width="200"
+                     Margin="0,0,0,10"
+                     Padding="5"
+                     Background="#FFFFFF"
+                     BorderBrush="#4682B4"
+                     BorderThickness="1"/>
+
+            <!-- Supporting Documents -->
+            <Button Content="Review"
+                    Width="200"
+                    Margin="0,0,0,10"
+                    Padding="10"
+                    Background="#FF69B4"
+                    Foreground="#FFFFFF"
+                    BorderBrush="#2E8B57"
+                    BorderThickness="1"
+                    Click="UploadFileButton_Click"/>
+
+            <!-- Submit Claim Button -->
+            <Button Content="Accept Claim"
+                    Width="200"
+                    Margin="0,20,0,0"
+                    Padding="10"
+                    Background="#800080"
+                    Foreground="#FFFFFF"
+                    BorderBrush="#4682B4"
+                    BorderThickness="1"
+                    Click="SubmitClaimButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
